@@ -1,0 +1,228 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans';
+	margin: 0;
+}
+
+/*******************************
+		NAVIGATION STYLES
+*******************************/
+.nav {
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	z-index: 100;
+}
+.nav ul {
+	list-style-type: none;
+	font-family: 'Blanc-Medium';
+	margin-right: 10px;
+}
+.nav li {
+	padding: 10px 10px 15px;
+	color: black;
+	text-transform: uppercase;
+}
+.nav .logo {
+	color: black;
+	float: left;
+	font-size: 20px;
+}
+.nav li {
+	float: right;
+	color: gray;
+}
+.clearfix {
+	clear: both;
+}
+.header {
+	height: 450px;
+	background-image: url("../img/computer.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.sticky {
+	position: fixed;
+	height: 75px;
+	z-index: 1000;
+	width: 100%;
+	opacity: 0.9;
+}
+
+
+
+/*******************************
+		ABOUT STYLES
+*******************************/
+.about img {
+	border: 15px solid white;
+	border-radius: 100%;
+	margin-top: -140px;
+	width: 250px;
+	float: right;
+}
+.about, .portfolio, .contact {
+	max-width: 1000px;
+	margin: auto;
+	padding: 50px;
+}
+.about h2, .portfolio h2, .contact h2 {
+	font-family: 'Blanc-Medium';
+}
+.about p, .contact p {
+	letter-spacing: 0.03em;
+    line-height: 1.7em
+}
+
+
+/*******************************
+		PORTFOLIO STYLES
+*******************************/
+.wrapper {
+	width: 100%;
+	background-color: #dfe0de;
+	color: white;
+}
+.portfolio {
+	max-width: 1200px;
+	text-align: center;
+}
+.portfolio h2 {
+	text-align: left;
+}
+.portfolio img {
+	width: 100%;
+}
+.project {
+	display: inline-block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+	margin: 5px;
+	text-align: center;
+	position: relative;
+}
+.overlay {
+	height: 100%;
+	z-index: 200;
+	transition: all 0.7s ease;
+	padding-top: 40px
+}
+.project:hover .overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	background: white;
+    opacity: 0.85;
+    top: 0;
+}
+.overlay h3 {
+	font-family: 'Blanc-Medium';
+	text-transform: uppercase;
+}
+.overlay p,
+.overlay h3,
+.project a {
+	color: black;
+	text-decoration: none;
+}
+.overlay button {
+	color: black;
+	padding: 17px;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	background: #69d3b7;
+	color: white;
+}
+.overlay button:hover {
+	background: red;
+	transition: all 0.7s ease;
+	background: #7E898C;
+}
+
+/*******************************
+		CONTACT STYLES
+*******************************/
+.contact {
+	height: 360px;
+	text-align: center;
+}
+.contact img {
+	display: inline-block;
+	height: 60px;
+	padding: 5px;
+}
+
+
+
+/*******************************
+		HAMBURGER STYLES
+*******************************/
+.hamburger-icon {
+	display: none;
+}
+.hamburger-menu {
+	display: none;
+	position: fixed;
+	top: 75px;
+	z-index: 3000;
+	width: 100%;
+}
+.hamburger-menu ul {
+	list-style-type: none;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	opacity: 0.9;
+	text-align: center;
+}
+.hamburger-menu li {
+	color: gray;
+	padding: 15px;
+}
+.hamburger-menu a {
+	font-family: 'Blanc-Medium';
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+/*******************************
+		MEDIA QUERY STYLES
+*******************************/
+@media (max-width: 540px) {
+	.header {
+		height: 300px;
+	}
+	.about h2 {
+		clear: right;
+	}
+	.about img, .about h2 {
+		float: none;
+		text-align: center;
+	}
+	.about, .contact {
+		padding: 20px;
+	}
+	.about img {
+		margin-left: 15%;
+	}
+	.portfolio {
+		padding: 25px;
+	}
+	.menu {
+		display: none;
+	}
+	.hamburger-icon {
+		cursor: pointer;
+		display: block;
+		float: right;
+		margin: 5px 20px 0px 0px;
+	}
+
+}
