@@ -40,6 +40,17 @@ The first thing I did was a media query to hide the ul navigation menu and show 
 Then I tried to transform the ul navigation menu to into a dropdown menu when the hamburger is clicked. This is where I hit a lot of trouble. I was having to change so many CSS rules and I couldn't get the drop down menu to look the way I wanted to.
 I ended up creating a new div for the dropdown menu. On larger screens its hidden altogether, and on small screens it is toggled using jQuery when the hamburger is clicked. This made it very easy to style along with super simple jQuery. Although I will admit for a larger project this is probably not the way to go.
 
+HTML for hamburger drop down menu. The hamburger icon image is placed inside the original nav div.
+```HTML
+<div class="hamburger-menu">
+    <ul>
+        <a href="#about" class="about_button"><li>About Me</li></a>
+        <a href="#portfolio" class="portfolio_button"><li>Portfolio</li></a>
+        <a href="#contact" class="contact_button"><li>Contact</li></a>
+    </ul>
+</div>
+```
+
 CSS Styles for hamburger icon and drop down menu.
 ```CSS
 .hamburger-icon {
