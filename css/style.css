@@ -111,7 +111,7 @@ body {
 	transition: all 0.7s ease;
 	padding-top: 40px
 }
-.project:hover .overlay {
+.no-touchevents .project:hover .overlay, .project.hover .overlay {
     display: block;
     position: absolute;
     width: 100%;
