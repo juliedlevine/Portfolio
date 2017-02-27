@@ -13,12 +13,16 @@ $('.hamburger-icon').click(function(){
     $('.hamburger-menu').toggle();
 });
 
+
+
 // If on touch, toggle overlay when project is clicked
 if (Modernizr.touchevents){
+    // When image is clicked on touch device, add hover class (show overlay)
     $('.project img').on('click', function(event){
         event.preventDefault();
         $(this).parent('.project').addClass('hover');
     });
+    // When overlay is clicked on touch device, remove hover class (hide overlay)
     $('.project .overlay').on('click', function(){
         $(this).parent('.project').removeClass('hover');
     });
