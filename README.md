@@ -91,3 +91,45 @@ $('.hamburger-icon').click(function(){
 });
 ```
 ![alt text](https://github.com/juliemdyer/Portfolio/blob/master/img/hamburger_screenshot.png)
+
+### Changing link color on scroll
+The effect I was going for was to have the navigation links change color when the user is scrolling past the content associated with that navigation link. To do that I had to use the scroll position, the height of different aspects of the page - navigation bar, window and document - along with the positions of each portion of the page - about, portfolio and contact.
+
+To check if the user had scrolled into the about section I wrote an if statement checking if the scroll position was larger than the about position. The about position is calculated by subtracting the nav height from the about id height. If that statement is true then first the selected class is removed from all links, then it is added specifically to the about button. The same goes for the portfolio link.
+
+The contact link had to be done differently though because in most cases the user will not scroll past it. Instead I had the link turn on in the instance that the user had scrolled to the bottom of the screen. To calculate this I wrote an if statement checking if the scroll position plus the window height equaled the document height.
+
+
+Code showing scroll function.
+```JavaScript
+// Change highlighted nav item on scroll
+$(window).scroll(function() {
+    var navHeight = $('.nav').height(),
+        documentHeight = $(document).height(),
+        windowHeight = $(window).height(),
+        scroll = $(window).scrollTop(),
+        about = $('#about').offset().top,
+        portfolio = $('#portfolio').offset().top;
+
+    if (scroll >= about - navHeight) {
+        $('.menu li').removeClass('selected');
+        $('.about_button li').addClass('selected');
+    }
+    if (scroll >= portfolio - navHeight) {
+        $('.menu li').removeClass('selected');
+        $('.portfolio_button li').addClass('selected');
+    }
+    // If at the top of the page, remove all selected classes
+    if (scroll === 0) {
+        $('.menu li').removeClass('selected');
+    }
+    // If at bottom of page, add selected class on Contact
+    if (scroll + windowHeight === documentHeight) {
+        $('.menu li').removeClass('selected');
+        $('.contact_button li').addClass('selected');
+    }
+});
+```
+
+Screenshot showing contact link selected when user scrolls to bottom of screen.
+![alt text](https://github.com/juliemdyer/Portfolio/blob/master/img/scroll_screenshot.png)
