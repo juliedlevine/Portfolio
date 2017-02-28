@@ -34,8 +34,14 @@ body {
 	float: right;
 	color: gray;
 }
+.nav li.selected {
+	color: #69d3b7;
+}
 .clearfix {
 	clear: both;
+}
+.selected {
+	color: #69d3b7;
 }
 .header {
 	height: 450px;
@@ -111,7 +117,8 @@ body {
 	transition: all 0.7s ease;
 	padding-top: 40px
 }
-.no-touchevents .project:hover .overlay, .project.hover .overlay {
+.no-touchevents .project:hover .overlay,
+.project.hover .overlay {
     display: block;
     position: absolute;
     width: 100%;
@@ -140,7 +147,6 @@ body {
 	color: white;
 }
 .overlay button:hover {
-	background: red;
 	transition: all 0.7s ease;
 	background: #7E898C;
 }
@@ -157,7 +163,10 @@ body {
 	height: 60px;
 	padding: 5px;
 }
-
+.contact-buttons {
+	padding: 15px;
+	height: 200px;
+}
 
 
 /*******************************
@@ -224,5 +233,16 @@ body {
 		float: right;
 		margin: 5px 20px 0px 0px;
 	}
+}
 
+@media (max-width: 320px) {
+	.about img {
+		margin-left: 5%;
+	}
+	.portfolio {
+		padding: 5px;
+	}
+	.contact {
+		height: 390px;
+	}
 }
