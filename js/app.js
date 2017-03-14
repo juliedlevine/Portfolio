@@ -1,12 +1,18 @@
+$('.tooltip').tooltipster({
+    theme: 'tooltipster-shadow',
+    animation: 'grow',
+    side: 'bottom'
+});
+
 // Change highlighted nav item on scroll
 $(window).scroll(function() {
     var navHeight = $('.nav').height(),
+        documentHeight = $(document).height(),
+        windowHeight = $(window).height(),
         scroll = $(window).scrollTop(),
         about = $('#about').offset().top,
-        portfolio = $('#portfolio').offset().top,
-        contact = $('#contact').offset().top,
-        documentHeight = $(document).height(),
-        windowHeight = $(window).height();
+        portfolio = $('#portfolio').offset().top;
+
     if (scroll >= about - navHeight) {
         $('.menu li').removeClass('selected');
         $('.about_button li').addClass('selected');

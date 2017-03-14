@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,800" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+	<link rel="stylesheet" href="tooltipster/dist/css/tooltipster-shadow.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="img/html.png">
 </head>
@@ -57,12 +59,22 @@
 	<div class="wrapper">
 		<div class="portfolio">
 			<div class="project">
-				<img src="img/tic_tac_toe.png">
+				<img src="img/blackjack.png">
+				<div class="overlay">
+					<h3>Blackjack</h3>
+					<p>Technologies used: <br>HTML, CSS, JavaScript, jQuery</p>
+					<br>
+					<a href="https://github.com/juliemdyer/Blackjack" target="_blank"><button>Git Hub</button></a>
+					<a href="http://julies-blackjack.bitballoon.com/" target="_blank"><button>Live Demo</button></a>
+				</div>
+			</div>
+			<div class="project">
+				<img src="img/tic_tac_toe2.png">
 				<div class="overlay">
 					<h3>Tic Tac Toe</h3>
 					<p>Technologies used: <br>HTML, CSS, JavaScript, jQuery</p>
 					<br>
-					<a href="https://github.com/juliemdyer" target="_blank"><button>Git Hub</button></a>
+					<a href="https://github.com/juliemdyer/Tic-Tac-Toe" target="_blank"><button>Git Hub</button></a>
 					<a href="http://julies-tictactoe.bitballoon.com/" target="_blank"><button>Live Demo</button></a>
 				</div>
 			</div>
@@ -125,10 +137,11 @@
 		<h2>Contact</h2>
 		<p>I'd love to connect with you! I'm currently seeking job opportunities in the Atlanta area. I can be reached via email or any social media outlets. You can also check out my GitHub account to see more of my work.</p>
 		<div class="contact-buttons">
-			<a href="mailto:juliemdyer@gmail.com"><img src="img/email.svg"></a>
-			<a href="https://www.facebook.com/julie.dyer.549" target="_blank"><img src="img/facebook.svg"></a>
-			<a href="https://www.linkedin.com/in/julie-dyer-43a7521a" target="_blank"><img src="img/linkedin.svg"></a>
-			<a href="https://github.com/juliemdyer" target="_blank"><img src="img/github.svg"></a>
+			<a href="mailto:juliemdyer@gmail.com"><img src="img/email.svg" class="tooltip" title="Email me"></a>
+			<a href="https://www.facebook.com/julie.dyer.549" target="_blank"><img src="img/facebook.svg" class="tooltip" title="Connect on Facebook"></a>
+			<a href="https://www.linkedin.com/in/julie-dyer-43a7521a" target="_blank"><img src="img/linkedin.svg" class="tooltip" title="Connect on Linkedin"></a>
+			<a href="https://github.com/juliemdyer" target="_blank"><img src="img/github.svg" class="tooltip" title="View my GitHub Repositories"></a>
+			<a href="Julie Dyer Resume 2017.pdf" target="_blank"><img src="img/document.svg" class="tooltip" title="Download my Resume"></a>
 		</div>
 	</div>
 
@@ -136,6 +149,7 @@
 <!-- Scripts -->
 <script src="js/modernizr-custom.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
 <script src="js/app.js"></script>
 
 </body>
