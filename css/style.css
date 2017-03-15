@@ -35,17 +35,19 @@ body {
 	color: gray;
 }
 .nav li.selected {
-	color: #69d3b7;
+	/*color: #69d3b7;*/
+	color: #9bd9f2;
 }
 .clearfix {
 	clear: both;
 }
 .selected {
-	color: #69d3b7;
+	/*color: #69d3b7;*/
+	color: #9bd9f2;
 }
 .header {
 	height: 450px;
-	background-image: url("../img/computer.jpg");
+	background-image: url("../img/computer3.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -96,9 +98,6 @@ body {
 	max-width: 1200px;
 	text-align: center;
 }
-.portfolio h2 {
-	text-align: left;
-}
 .portfolio img {
 	width: 100%;
 }
@@ -128,6 +127,7 @@ body {
     top: 0;
 }
 .overlay h3 {
+	padding: 0 12px;
 	font-family: 'Blanc-Medium';
 	text-transform: uppercase;
 }
@@ -143,7 +143,8 @@ body {
 	border: none;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	background: #69d3b7;
+	background: #9bd9f2;
+	/*background: #69d3b7;*/
 	color: white;
 }
 .overlay button:hover {
@@ -174,6 +175,9 @@ body {
 *******************************/
 .hamburger-icon {
 	display: none;
+}
+.hamburger-icon img {
+	height: 33px;
 }
 .hamburger-menu {
 	display: none;
@@ -208,6 +212,9 @@ body {
 	.header {
 		height: 300px;
 	}
+	.logo {
+		margin-left: -30px;
+	}
 	.about h2 {
 		clear: right;
 	}
@@ -233,9 +240,23 @@ body {
 		float: right;
 		margin: 5px 20px 0px 0px;
 	}
+	.contact-buttons {
+		padding: 21px 65px;
+	}
 }
 
-@media (max-width: 320px) {
+/* Phone 6 Plus*/
+@media (max-width: 414px) {
+	.contact-buttons :nth-child(2) {
+		margin-right: 115px;
+	}
+}
+
+/* iPhone 5 and iPhone 6 */
+@media (max-width: 375px) {
+	.contact-buttons {
+		padding: 15px 20px;
+	}
 	.about img {
 		margin-left: 5%;
 	}
@@ -244,5 +265,11 @@ body {
 	}
 	.contact {
 		height: 390px;
+	}
+	.contact img {
+		height: 60px;
+	}
+	.contact-buttons :nth-child(2) {
+		margin-right: 108px;
 	}
 }
