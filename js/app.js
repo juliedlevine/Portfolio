@@ -1,3 +1,13 @@
+$('#tictactoe').on('click', function() {
+    $('.tic-tac-toe').toggle('slow');
+});
+$('#katierafferty').on('click', function() {
+    $('.katie-rafferty').toggle('slow');
+});
+$('.portfolio').on('click', '.hide-button', function() {
+    $('.code').hide('slow');
+});
+
 $('.tooltip').tooltipster({
     theme: 'tooltipster-shadow',
     animation: 'grow',
