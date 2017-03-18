@@ -1,13 +1,42 @@
-$('#tictactoe').on('click', function() {
-    $('.tic-tac-toe').toggle('slow');
+var windowsize = $(window).width();
+showCode();
+
+$(window).resize(function() {
+    var windowsize = $(window).width(); // New width on screen re-size
+    showCode();
 });
-$('#katierafferty').on('click', function() {
-    $('.katie-rafferty').toggle('slow');
-});
+
+function showCode() {
+    // square scenario
+    if (windowsize >= 840) {
+        $('.row1 .code-button').on('click', function() {
+            $(this).parent().siblings('.code').insertAfter('.katie-rafferty').show('slow');
+        });
+        $('.row2 .code-button').on('click', function() {
+            $(this).parent().siblings('.code').insertAfter('.hangman').show('slow');
+        });
+    // all one column scenario
+    } else if (windowsize < 840) {
+        $('.tic-tac-toe .code-button').on('click', function() {
+            $(this).parent().siblings('.code').insertAfter('.tic-tac-toe').show('slow');
+        });
+        $('.katie-rafferty .code-button').on('click', function() {
+            $(this).parent().siblings('.code').insertAfter('.katie-rafferty').show('slow');
+        });
+        $('.weather .code-button').on('click', function() {
+            $(this).parent().siblings('.code').insertAfter('.weather').show('slow');
+        });
+        $('.hangman .code-button').on('click', function() {
+            $(this).parent().siblings('.code').insertAfter('.hangman').show('slow');
+        });
+    }
+}
+
 $('.portfolio').on('click', '.hide-button', function() {
     $('.code').hide('slow');
 });
 
+// Tooltip plugin
 $('.tooltip').tooltipster({
     theme: 'tooltipster-shadow',
     animation: 'grow',
