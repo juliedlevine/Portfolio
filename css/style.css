@@ -168,7 +168,7 @@ video {
 	max-width: 750px;
 }
 .portfolio {
-	max-width: 1300px;
+	max-width: 840px;
 	text-align: center;
 }
 .portfolio img {
@@ -176,8 +176,8 @@ video {
 }
 .project {
 	display: inline-block;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     overflow: hidden;
 	margin: 5px;
 	text-align: center;
@@ -201,7 +201,7 @@ video {
 }
 .overlay h3 {
 	margin-top: 0;
-	padding: 0 12px;
+	padding-top: 20px;
 	font-family: 'Blanc-Medium';
 	text-transform: uppercase;
 }
@@ -213,7 +213,7 @@ video {
 }
 .overlay button {
 	color: black;
-	padding: 17px;
+	padding: 21px;
 	border: none;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -340,6 +340,9 @@ video {
 	.about img {
 		margin-left: 13%;
 	}
+	.portfolio-text {
+		padding: 0 13px;
+	}
 	.portfolio {
 		padding: 5px;
 	}
@@ -356,5 +359,13 @@ video {
 @media (max-width: 320px) {
 	.about img {
 		margin-left: 5%;
+	}
+	.project {
+		width: 300px;
+		height: 300px;
+	}
+	.overlay h3 {
+		padding: 0 12px;
+		margin-top: -17px;
 	}
 }
