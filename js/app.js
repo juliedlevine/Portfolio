@@ -1,40 +1,21 @@
-var windowsize = $(window).width();
-showCode();
-
-$(window).resize(function() {
-    var windowsize = $(window).width(); // New width on screen re-size
-    showCode();
+// Show and hide code snippets
+$('.tic .code-button').click(function() {
+    $('.tic-code').slideToggle().css('float', 'right');
 });
-
-function showCode() {
-    // square scenario
-    if (windowsize >= 840) {
-        $('.row1 .code-button').on('click', function() {
-            $(this).parent().siblings('.code').insertAfter('.katie-rafferty').show('slow');
-        });
-        $('.row2 .code-button').on('click', function() {
-            $(this).parent().siblings('.code').insertAfter('.hangman').show('slow');
-        });
-    // all one column scenario
-    } else if (windowsize < 840) {
-        $('.tic-tac-toe .code-button').on('click', function() {
-            $(this).parent().siblings('.code').insertAfter('.tic-tac-toe').show('slow');
-        });
-        $('.katie-rafferty .code-button').on('click', function() {
-            $(this).parent().siblings('.code').insertAfter('.katie-rafferty').show('slow');
-        });
-        $('.weather .code-button').on('click', function() {
-            $(this).parent().siblings('.code').insertAfter('.weather').show('slow');
-        });
-        $('.hangman .code-button').on('click', function() {
-            $(this).parent().siblings('.code').insertAfter('.hangman').show('slow');
-        });
-    }
-}
-
+$('.katie .code-button').click(function() {
+    $('.katie-code').slideToggle();
+});
+$('.weather .code-button').click(function() {
+    $('.weather-code').slideToggle().css('float', 'right');
+});
+$('.hangman .code-button').click(function() {
+    $('.hangman-code').slideToggle();
+});
 $('.portfolio').on('click', '.hide-button', function() {
-    $('.code').hide('slow');
+    $('.code').slideUp();
 });
+
+
 
 // Tooltip plugin
 $('.tooltip').tooltipster({
@@ -42,6 +23,8 @@ $('.tooltip').tooltipster({
     animation: 'grow',
     side: 'bottom'
 });
+
+
 
 // Change highlighted nav item on scroll
 $(window).scroll(function() {

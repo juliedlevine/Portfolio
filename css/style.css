@@ -107,6 +107,19 @@ button:focus {
 .featured h2 {
 	margin: 20px;
 }
+.featured button {
+	color: white;
+    border: none;
+    background: #808080;
+    padding: 16px 62px;
+    margin: 17px 6px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+.featured button:hover {
+	transition: all 0.7s ease;
+	background-color: #a7aaaf;
+}
 .featured img {
 	height: 45px;
 }
@@ -131,6 +144,7 @@ video {
 		CODEPEN STYLES
 *******************************/
 .code {
+	width: 100%;
 	max-width: 954px;
 	margin: auto;
 	display: none;
@@ -152,8 +166,9 @@ video {
 }
 .hide-button:hover {
 	background-color: #a7aaaf;
-	color: white;
 }
+
+
 /*******************************
 		PORTFOLIO STYLES
 *******************************/
@@ -182,6 +197,9 @@ video {
 	margin: 5px;
 	text-align: center;
 	position: relative;
+}
+.clearfix {
+	clear: both;
 }
 .overlay {
 	height: 100%;
@@ -218,12 +236,11 @@ video {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	background: #9bd9f2;
-	/*background: #69d3b7;*/
 	color: white;
 }
 .overlay button:hover {
 	transition: all 0.7s ease;
-	background: #7E898C;
+	background: #7c7e82;
 }
 
 /*******************************
