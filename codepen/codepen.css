@@ -1,0 +1,18 @@
+div.#embed-nav.embed-nav.group,
+#output.split-output .active  {
+    width: 100%;
+}
+div.cp_embed_wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#output.split-output .active {
+    width: 100%;
+}
+.embed-nav .logo-wrap .open-on,
+.embed-nav .logo-wrap .open-on,
+#result-box.code-box.active,
+#result-link,
+.embed-nav .logo-wrap #embed-codepen-logo {
+    display: none;
+}
