@@ -75,10 +75,14 @@ button:focus {
 	width: 250px;
 	float: right;
 }
+.about a {
+	text-decoration: none;
+	color: #2D7ABC;
+}
 .about, .featured, .portfolio, .contact {
 	max-width: 1100px;
 	margin: auto;
-	padding: 50px;
+	padding: 50px 50px 25px;
 }
 .about h2, .featured h2, .portfolio h2, .contact h2 {
 	color: black;
@@ -96,13 +100,12 @@ button:focus {
 *******************************/
 .featured-wrapper {
 	width: 100%;
-	/*background-color: #e5f6ff;*/
 	background-color: #eff8ff;
 	text-align: center;
-	margin-bottom: 65px;
 }
 .featured {
-	max-width: 915px;
+	padding: 62px 50px 41px;
+	max-width: 935px;
 }
 .featured h2 {
 	margin: 20px;
@@ -110,9 +113,9 @@ button:focus {
 .featured button {
 	color: white;
     border: none;
-    background: #808080;
+    background: #A5D8F0;
     padding: 16px 62px;
-    margin: 17px 6px;
+	margin: 16px 6px 25px;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
@@ -123,18 +126,21 @@ button:focus {
 .featured img {
 	height: 55px;
 }
-video {
+.video {
 	display: inline-block;
 	width: 100%;
 	margin-right: -9px;
 }
 .blackjack-split {
 	text-align: center;
-	margin-bottom: 70px;
+	padding-bottom: 70px;
+}
+.featured p {
+	padding: 18px;
 }
 .blackjack-split-video, .blackjack-split-code {
 	display: inline-block;
-	width: 568px;
+	width: 555px;
 }
 .clearfix {
 	clear: both;
@@ -174,7 +180,7 @@ video {
 *******************************/
 .portfolio-wrapper {
 	width: 100%;
-	background-color: #eaebed; /* very light gray */
+	/*background-color: #eaebed; /* very light gray */*/
 	color: white;
 }
 .portfolio-text {
@@ -190,6 +196,7 @@ video {
 	width: 100%;
 }
 .project {
+	border: 4px solid #eaebed;
 	display: inline-block;
     width: 350px;
     height: 350px;
@@ -223,6 +230,14 @@ video {
 	font-family: 'Blanc-Medium';
 	text-transform: uppercase;
 }
+.katie .overlay h3 {
+	width: 80%;
+	margin: auto;
+	padding-top: 0;
+}
+.katie .overlay p {
+	margin-bottom: 0;
+}
 .overlay p,
 .overlay h3,
 .project a {
@@ -246,8 +261,12 @@ video {
 /*******************************
 		CONTACT STYLES
 *******************************/
+.contact-wrapper {
+	width: 100%;
+	background-color: #eff8ff;
+}
 .contact {
-	height: 360px;
+	height: 400px;
 	text-align: center;
 }
 .contact img {
@@ -257,7 +276,6 @@ video {
 }
 .contact-buttons {
 	padding: 15px;
-	height: 170px;
 }
 
 
@@ -299,6 +317,15 @@ video {
 /*******************************
 		MEDIA QUERY STYLES
 *******************************/
+@media (max-width: 1139px) {
+	.blackjack-split-video {
+		margin-right: 9px;
+	}
+	.blackjack-split-code {
+		margin-top: -9px;
+	}
+}
+
 @media (max-width: 540px) {
 	.header {
 		height: 300px;
@@ -322,8 +349,9 @@ video {
 	.blackjack-split-video, .blackjack-split-code {
 	    width: 87%;
 	}
-	video {
-		margin: 0 auto;
+	.featured button {
+		padding: 14px 21px;
+		margin: 3px 6px;
 	}
 	.portfolio {
 		padding: 25px;
@@ -336,6 +364,9 @@ video {
 		display: block;
 		float: right;
 		margin: 5px 20px 0px 0px;
+	}
+	.contact {
+		height: 500px;
 	}
 	.contact-buttons {
 		padding: 21px 65px;
@@ -362,9 +393,6 @@ video {
 	}
 	.portfolio {
 		padding: 5px;
-	}
-	.contact {
-		height: 390px;
 	}
 	.contact img {
 		height: 60px;
