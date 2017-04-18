@@ -1,15 +1,15 @@
 // Show and hide code snippets
-$('.tic .code-button').click(function() {
-    $('.tic-code').slideToggle().css('float', 'right');
+$('.one .code-button').click(function() {
+    $('.one-code').slideToggle().css('float', 'right');
 });
-$('.katie .code-button').click(function() {
-    $('.katie-code').slideToggle();
+$('.two .code-button').click(function() {
+    $('.two-code').slideToggle();
 });
-$('.weather .code-button').click(function() {
-    $('.weather-code').slideToggle().css('float', 'right');
+$('.three .code-button').click(function() {
+    $('.three-code').slideToggle().css('float', 'right');
 });
-$('.hangman .code-button').click(function() {
-    $('.hangman-code').slideToggle();
+$('.four .code-button').click(function() {
+    $('.four-code').slideToggle();
 });
 $('.portfolio').on('click', '.hide-button', function() {
     $('.code').slideUp();

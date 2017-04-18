@@ -131,16 +131,16 @@ button:focus {
 	width: 100%;
 	margin-right: -9px;
 }
-.blackjack-split {
+.featured-split {
 	text-align: center;
 	padding-bottom: 70px;
 }
 .featured p {
 	padding: 18px;
 }
-.blackjack-split-video, .blackjack-split-code {
+.featured-split-video, .featured-split-code {
 	display: inline-block;
-	width: 555px;
+	width: 545px;
 }
 .clearfix {
 	clear: both;
@@ -226,7 +226,6 @@ button:focus {
 }
 .overlay h3 {
 	margin-top: 0;
-	padding-top: 20px;
 	font-family: 'Blanc-Medium';
 	text-transform: uppercase;
 }
@@ -318,10 +317,10 @@ button:focus {
 		MEDIA QUERY STYLES
 *******************************/
 @media (max-width: 1139px) {
-	.blackjack-split-video {
+	.featured-split-video {
 		margin-right: 9px;
 	}
-	.blackjack-split-code {
+	.featured-split-code {
 		margin-top: -9px;
 	}
 }
@@ -346,7 +345,7 @@ button:focus {
 	.about img {
 		margin-left: 15%;
 	}
-	.blackjack-split-video, .blackjack-split-code {
+	.featured-split-video, .featured-split-code {
 	    width: 87%;
 	}
 	.featured button {
