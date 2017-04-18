@@ -317,8 +317,8 @@ button:focus {
 		MEDIA QUERY STYLES
 *******************************/
 @media (max-width: 1139px) {
-	.featured-split-video {
-		margin-right: 9px;
+	.featured-split-video, .featured-split-code {
+		width: 550px;
 	}
 	.featured-split-code {
 		margin-top: -9px;
@@ -347,6 +347,9 @@ button:focus {
 	}
 	.featured-split-video, .featured-split-code {
 	    width: 87%;
+	}
+	.iframe-video {
+		width: 100%;
 	}
 	.featured button {
 		padding: 14px 21px;
